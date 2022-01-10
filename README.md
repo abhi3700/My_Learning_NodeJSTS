@@ -1,2 +1,44 @@
 # My_Learning_Javascript
 Learn everything about Javascript
+
+## About
+* Node should not be used in CPU intensive work.
+
+## Installation
+### 1. NVM
+To manage multiple versions of __Node.js__
+
+* `$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash`
+* list node versions using `$ nvm list`
+* Use specific version using `$ nvm use <version_no>` E.g. `$ nvm use 16.13.1`
+* Install a specific version of `node` via `nvm install <version_no>` E.g. `$ nvm use 14`
+
+### 2. Node.js (`node` & `npm`)
+#### M-1 [RECOMMENDED]
+* Install the latest node via `nvm install node`
+* Use the latest node via `nvm use node`
+* Install the latest _lts_ node via `nvm install --lts`
+* Use the latest _lts_ node via `nvm use --lts`
+
+> NOTE: LTS: long term support in terms of stable & secure versions.
+
+#### M-2
+* Install Node & npm from [here](https://nodejs.org/en/download/)
+
+> NOTE: Whenever `node` gets installed, `npm` also gets installed. 
+
+
+## Features
+* `jshint` can be used to get suggestions for better code in `js`.
+	- `jshint app.js` can be used like this to find suggestions.
+	- M-1: `.jshintrc` file can be added as inline configuration for the entire project in the root directory & adding it this:
+
+```json
+{
+	"esversion": 6
+}
+```
+	- M-2: Also this line can be added at the starting of the `.js` file. [Source](https://stackoverflow.com/a/35365041/6774636)
+
+## References
+* [Node.js Tutorial for Beginners: Learn Node in 1 Hour](https://youtu.be/TlB_eWDSMt4)
