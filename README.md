@@ -11,7 +11,7 @@ To manage multiple versions of __Node.js__
 * `$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash`
 * list node versions using `$ nvm list`
 * Use specific version using `$ nvm use <version_no>` E.g. `$ nvm use 16.13.1`
-* Install a specific version of `node` via `nvm install <version_no>` E.g. `$ nvm use 14`
+* Install a specific version of `node` via `nvm install <version_no>` E.g. `$ nvm install 14`
 
 ### 2. Node.js (`node` & `npm`)
 #### M-1 [RECOMMENDED]
