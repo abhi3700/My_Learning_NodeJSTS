@@ -34,6 +34,22 @@ To manage multiple versions of **Node.js**
 
 > NOTE: Whenever `node` gets installed, `npm` also gets installed.
 
+### 3. Yarn
+
+`yarn` is relatively faster than `npm` because of **parallel** installation of dependency packages instead of **sequential**.
+
+So, install using `npm`:
+
+```
+$ npm install -g yarn
+```
+
+Thereafter for a project, `yarn` can be used to install, test, coverage, etc, instead of `npm`.
+
+[Docs](https://yarnpkg.com/)
+
+To setup in Github Action for a repo, refer [this](https://github.com/abhi3700/my_coding_toolkit/blob/master/git_all.md#github-action).
+
 ## Features
 
 - `jshint` can be used to get suggestions for better code in `js`.
