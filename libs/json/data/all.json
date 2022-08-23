@@ -1,0 +1,66 @@
+{
+  "clients": [
+    {
+      "client_comp_name": "zedrun",
+      "message_public_key": "",
+      "project_completion_deadline": "",
+      "about-project": {
+        "network": {
+          "mainnet": "Avalanche",
+          "testnet": "Fuji"
+        },
+        "contract": {
+          "Token": {
+            "token_name": "ZED RUN",
+            "token_symbol": "ZED",
+            "token_decimal": 18,
+            "totalSupply": "1000000000000000000000000000",
+            "accounts": [
+              "0x4AC22E1FFd443B2aac6C89184FEecB6c65C51775",
+              "0x32BA1c4Bc4FA48bF21C3CA22Fe398b0d1448d67D"
+            ],
+            "amounts": [
+              "930000000000000000000000000",
+              "70000000000000000000000000"
+            ]
+          },
+          "TokenLockup": {
+            "minTimelockAmount": 0,
+            "maxReleaseDelay": 346896000
+          }
+        }
+      }
+    },
+    {
+      "client_comp_name": "pocketworld",
+      "message_public_key": "",
+      "project_completion_deadline": "",
+      "about-project": {
+        "network": {
+          "mainnet": "Ethereum",
+          "testnet": "Goerli"
+        },
+        "contract": {
+          "Token": {
+            "token_name": "Pocket World",
+            "token_symbol": "PWD",
+            "token_decimal": 18,
+            "totalSupply": "1000000000000000000000000000",
+            "accounts": [
+              "0x4AC22E1FFd443B2aac6C89184FEecB6c65C51775",
+              "0x32BA1c4Bc4FA48bF21C3CA22Fe398b0d1448d67D"
+            ],
+            "amounts": [
+              "930000000000000000000000000",
+              "70000000000000000000000000"
+            ]
+          },
+          "TokenLockup": {
+            "minTimelockAmount": 0,
+            "maxReleaseDelay": 346896000
+          }
+        }
+      }
+    }
+  ]
+}
