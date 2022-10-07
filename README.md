@@ -65,6 +65,13 @@ To setup in Github Action for a repo, refer [this](https://github.com/abhi3700/m
 
   - M-2: Also this line can be added at the starting of the `.js` file. [Source](https://stackoverflow.com/a/35365041/6774636)
 
+## Troubleshoot
+
+### 1. `yarn.lock` conflict
+
+- _Cause_: `yarn.lock` file conflicts are not resolved during PR.
+- _Solution_: Just copy paste the `yarn.lock` file from the `main` branch & then run `$ yarn install` & then push commit. Your lock file is synced now.
+
 ## References
 
 - [Node.js Tutorial for Beginners: Learn Node in 1 Hour](https://youtu.be/TlB_eWDSMt4)
