@@ -15,7 +15,7 @@ function jsonReader(filePath, cb) {
   });
 }
 
-jsonReader("./data/all.json", (err, data) => {
+jsonReader("./data/customer.json", (err, data) => {
   if (err) {
     console.log(`${err}`);
   } else {
