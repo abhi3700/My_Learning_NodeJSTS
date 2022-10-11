@@ -1,0 +1,10 @@
+{
+  "name": "prettier",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "abhi3700",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  }
+}
