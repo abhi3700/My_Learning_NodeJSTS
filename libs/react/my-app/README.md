@@ -2,6 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## About this project
+
+- In this project, we learn from [here](https://beta.reactjs.org/learn) & apply in form of commits:
+  1. [proj. added](https://github.com/abhi3700/My_Learning_NodeJSTS/commit/4a2fa6c8293be713d6fe62fcf6b7cd26c21a85e3)
+  2. [default code changed to Hello world](https://github.com/abhi3700/My_Learning_NodeJSTS/commit/e28e5908a19f713fbdd3b9a21412d7d9cf777479)
+  3. [MyButton JSX code added](https://github.com/abhi3700/My_Learning_NodeJSTS/commit/f88f38d73281cf83cebbf003ee10ad2370455eca)
+  4. [user with avatar img added](https://github.com/abhi3700/My_Learning_NodeJSTS/commit/b48e5e09e235cb5ea7d419fafe62317a89943a50)
+
 ## Available Scripts
 
 In the project directory, you can run:
