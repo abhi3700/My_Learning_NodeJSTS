@@ -49,3 +49,7 @@
   margin: 4px 2px;
   cursor: pointer;
 }
+
+.avatar {
+  border-radius: 50%;
+}

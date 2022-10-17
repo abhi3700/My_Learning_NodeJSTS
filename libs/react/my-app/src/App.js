@@ -1,14 +1,24 @@
-import "./App.css";
+import './App.css';
 
-function MyButton() {
-  return <button className="my-button">My Button</button>;
-}
+const user = {
+  name: 'John Doe',
+  age: 42,
+  image: 'https://randomuser.me/api/portraits/lego/2.jpg',
+  imageSize: 90,
+};
 
 function App() {
   return (
     <div>
-      <h1>Hello World to `my-app`</h1>
-      <MyButton />
+      <h2>
+        {user.name}, {user.age}
+      </h2>
+      <img
+        className="avatar"
+        src={user.image}
+        alt={'Photo of' + user.name}
+        style={{ width: user.imageSize, height: user.imageSize }}
+      />
     </div>
   );
 }
