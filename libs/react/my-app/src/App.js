@@ -1,10 +1,14 @@
 import "./App.css";
 
+function MyButton() {
+  return <button className="my-button">My Button</button>;
+}
+
 function App() {
   return (
     <div>
       <h1>Hello World to `my-app`</h1>
-      <button>Click Me</button>
+      <MyButton />
     </div>
   );
 }
