@@ -15,8 +15,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
      ![](../../../img/react_my_app_v5.png)
   6. [view list of items with color based on field](https://github.com/abhi3700/My_Learning_NodeJSTS/commit/fd9b5c734d0c2e2aa557125ba6bdc37b7908a2d3)
      ![](../../../img/react_my_app_v6.png)
-  7. [clickMe button using event handler along with alert msg]()
+  7. [clickMe button using event handler along with alert msg](https://github.com/abhi3700/My_Learning_NodeJSTS/commit/424e8f3a93ebb0a9dc2a66cb708b97a14853197c)
      ![](../../../img/react_my_app_v7.png)
+  8. [clickMe button using state](https://github.com/abhi3700/My_Learning_NodeJSTS/commit/7d9ef8e6d9d72d485fe265ba29a26c81e4de6fb5)
+     ![](../../../img/react_my_app_v8.png)
 
 ## Available Scripts
 
