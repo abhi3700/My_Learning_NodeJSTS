@@ -1,26 +1,17 @@
 import './App.css';
 
-const user = {
-  name: 'John Doe',
-  age: 42,
-  image: 'https://randomuser.me/api/portraits/lego/2.jpg',
-  imageSize: 90,
-};
+let isLoggedIn = false;
+
+function AdminPanel() {
+  return <div>Admin Panel</div>;
+}
+
+function LoginPanel() {
+  return <div>Login Panel</div>;
+}
 
 function App() {
-  return (
-    <div>
-      <h2>
-        {user.name}, {user.age}
-      </h2>
-      <img
-        className="avatar"
-        src={user.image}
-        alt={'Photo of' + user.name}
-        style={{ width: user.imageSize, height: user.imageSize }}
-      />
-    </div>
-  );
+  return <div>{isLoggedIn ? <AdminPanel /> : <LoginPanel />}</div>;
 }
 
 export default App;
