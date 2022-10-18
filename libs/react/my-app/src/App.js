@@ -1,21 +1,15 @@
 import './App.css';
 
-const products = [
-  { name: 'Cabbage', isVeg: true, id: 1 },
-  { name: 'Mutton', isVeg: false, id: 2 },
-  { name: 'Carrot', isVeg: true, id: 3 },
-];
+function MyButton() {
+  function handleClick() {
+    alert('button clicked');
+  }
+
+  return <button onClick={handleClick}>Click me</button>;
+}
 
 function App() {
-  const listProducts = products.map(product => {
-    return (
-      <li key={product.id} style={{ color: product.isVeg ? 'green' : 'red' }}>
-        {product.name}
-      </li>
-    );
-  });
-
-  return <ul>{listProducts}</ul>;
+  return <MyButton />;
 }
 
 export default App;

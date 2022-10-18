@@ -5,6 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## About this project
 
 - In this project, we learn from [here](https://beta.reactjs.org/learn) & apply in form of commits:
+
   1. [proj. added](https://github.com/abhi3700/My_Learning_NodeJSTS/commit/4a2fa6c8293be713d6fe62fcf6b7cd26c21a85e3)
   2. [default code changed to Hello world](https://github.com/abhi3700/My_Learning_NodeJSTS/commit/e28e5908a19f713fbdd3b9a21412d7d9cf777479)
   3. [MyButton JSX code added with CSS](https://github.com/abhi3700/My_Learning_NodeJSTS/commit/f88f38d73281cf83cebbf003ee10ad2370455eca)
@@ -12,8 +13,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
      ![user with avatar img added](../../../img/react_my_app_v4.png)
   5. [toggle b/w login & admin panels](https://github.com/abhi3700/My_Learning_NodeJSTS/commit/ffc675fa619d7e4ee0d36984b7d72e296c564acc)
      ![](../../../img/react_my_app_v5.png)
-  6. [view list of items with color based on field]()
+  6. [view list of items with color based on field](https://github.com/abhi3700/My_Learning_NodeJSTS/commit/fd9b5c734d0c2e2aa557125ba6bdc37b7908a2d3)
      ![](../../../img/react_my_app_v6.png)
+  7. [clickMe button using event handler along with alert msg]()
+     ![](../../../img/react_my_app_v7.png)
 
 ## Available Scripts
 
