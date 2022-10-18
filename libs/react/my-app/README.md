@@ -10,8 +10,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   3. [MyButton JSX code added with CSS](https://github.com/abhi3700/My_Learning_NodeJSTS/commit/f88f38d73281cf83cebbf003ee10ad2370455eca)
   4. [user with avatar img added](https://github.com/abhi3700/My_Learning_NodeJSTS/commit/b48e5e09e235cb5ea7d419fafe62317a89943a50)
      ![user with avatar img added](../../../img/react_my_app_v4.png)
-  5. [toggle b/w login & admin panels]
+  5. [toggle b/w login & admin panels](https://github.com/abhi3700/My_Learning_NodeJSTS/commit/ffc675fa619d7e4ee0d36984b7d72e296c564acc)
      ![](../../../img/react_my_app_v5.png)
+  6. [view list of items with color based on field]()
+     ![](../../../img/react_my_app_v6.png)
 
 ## Available Scripts
 
