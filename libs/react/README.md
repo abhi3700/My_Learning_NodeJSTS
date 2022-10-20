@@ -18,6 +18,8 @@ Learn everything about React here.
 
 - If you add a **classname** to a component, you have to use add the style for the same in the CSS file (with same name like for `App.js`, `App.css`).
 
+> `class` is replaced by `className` in JSX. So, here my-button is the className which is defined in the CSS filename same as the JS filename.
+
 ```jsx
 // App.js
 function MyButton() {
@@ -78,6 +80,30 @@ function MyButton({ count, onClick }) {
 }
 ```
 
+---
+
+Each child in a list should have a unique `key` prop.
+
+otherwise, it will throw error like this:
+
+![](../../img/react_list_key_error.png)
+
+Solution:
+
+```jsx
+// App.js
+function MyList() {
+  const list = ["a", "b", "c"];
+  return (
+    <ul>
+      {list.map((item) => (
+        <li key={item}>{item}</li>
+      ))}
+    </ul>
+  );
+}
+```
+
 ## My Apps
 
 Learn about each of my apps in the "**About**" section.
@@ -103,7 +129,7 @@ Learn about each of my apps in the "**About**" section.
 ## Tools
 
 - [BuilderX](https://builderx.io/app/): No-code React UI builder like Android Studio.
-- [Anima App](https://www.animaapp.com/): Alternative to BuilderX
+- [Anima App](https://www.animaapp.com/): Alternative to BuilderX.
 - [Locofy.ai](https://www.locofy.ai/): Create React apps with no code. Just import your design and get a React FE code.
 
 ## References
