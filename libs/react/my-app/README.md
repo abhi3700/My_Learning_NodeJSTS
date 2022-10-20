@@ -17,8 +17,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
      ![](../../../img/react_my_app_v6.png)
   7. [clickMe button using event handler along with alert msg](https://github.com/abhi3700/My_Learning_NodeJSTS/commit/424e8f3a93ebb0a9dc2a66cb708b97a14853197c)
      ![](../../../img/react_my_app_v7.png)
-  8. [clickMe button using state](https://github.com/abhi3700/My_Learning_NodeJSTS/commit/7d9ef8e6d9d72d485fe265ba29a26c81e4de6fb5)
+  8. [clickMe button using state which changed count separately](https://github.com/abhi3700/My_Learning_NodeJSTS/commit/7d9ef8e6d9d72d485fe265ba29a26c81e4de6fb5)
      ![](../../../img/react_my_app_v8.png)
+     ![](../../../img/react_my_app_v8_learn.png)
+  9. [clickMe button using state which changed count together](https://github.com/abhi3700/My_Learning_NodeJSTS/commit/2542af27e94eb1c2484e0c499d29dfd4170d1c3a)
+     ![](../../../img/react_my_app_v9.png)
+     ![](../../../img/react_my_app_v9_learn.png)
 
 ## Available Scripts
 
@@ -26,7 +30,7 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
