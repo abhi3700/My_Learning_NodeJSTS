@@ -205,6 +205,10 @@ $ node hello
 - For React, JS is used which is achieved by compiling typescript. Hence, a safer JS rather than hardcoding JS w/o static typing.
 - [understanding typescript](./tuts/understanding-ts/README.md)
 
+## Cheatsheet
+
+![](../img/ts_cheatsheet.png)
+
 ## Troubleshooting
 
 ### Error: `error TS2304: Cannot find name 'unknown'.`
