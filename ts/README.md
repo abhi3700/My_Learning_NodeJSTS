@@ -1,4 +1,4 @@
-# My_Learning-Typescript
+# Typescript
 
 My Learning on Typescript programming language
 
@@ -26,7 +26,7 @@ So, it's better to use `===` than `==` in TS.
 
 E.g.
 
-```console
+```ts
 let str = "1";
 let num = 1;
 
