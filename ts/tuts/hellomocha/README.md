@@ -1,23 +1,16 @@
 # Project: Hello with Unit tests
 
-## Installation
-
-- `$ npm install`
-
-## Packages
-
-- `ts-node`: for Mocha & Jasmine
-- `ts-jest`: for Jest
-- `nyc`: code coverage
-
 ## File system
 
 - `src/`: contains JS/TS files
 - `tests/`: contains tests TS files
 - `package.json`: present in root of project. This is created with `npm init`
 
-## Installation
+## Packages
 
+- `ts-node`: for Mocha & Jasmine
+- `ts-jest`: for Jest
+- `nyc`: Code coverage
 - `npm i -D chai mocha nyc ts-node typescript` creates a `package.json` file in the root directory:
 
 ```json
@@ -61,5 +54,5 @@
 
 ## Getting Started
 
-1. Run this command on terminal: `sh install.sh` in the root directory of project.
-2. Run test with `npm run test` or `npm t` in the root directory
+1. Run this command on terminal: `$ npm i` in the root directory of project.
+2. Run test with `$ npm run test` or `$ npm t` in the root directory
