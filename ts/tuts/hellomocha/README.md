@@ -1,17 +1,25 @@
 # Project: Hello with Unit tests
 
+## Installation
+
+- `$ npm install`
+
 ## Packages
-* `ts-node`: for Mocha & Jasmine
-* `ts-jest`: for Jest
-* `nyc`: code coverage
+
+- `ts-node`: for Mocha & Jasmine
+- `ts-jest`: for Jest
+- `nyc`: code coverage
 
 ## File system
-* `src/`: contains JS/TS files
-* `tests/`: contains tests TS files
-* `package.json`: present in root of project. This is created with `npm init`
+
+- `src/`: contains JS/TS files
+- `tests/`: contains tests TS files
+- `package.json`: present in root of project. This is created with `npm init`
 
 ## Installation
-* `npm i -D chai mocha nyc ts-node typescript` creates a `package.json` file in the root directory:
+
+- `npm i -D chai mocha nyc ts-node typescript` creates a `package.json` file in the root directory:
+
 ```json
 {
   "devDependencies": {
@@ -23,7 +31,9 @@
   }
 }
 ```
-* `npm i -D @types/chai @types/mocha` modifies `package.json` in the root directory:
+
+- `npm i -D @types/chai @types/mocha` modifies `package.json` in the root directory:
+
 ```json
 {
   "devDependencies": {
@@ -39,7 +49,9 @@
 ```
 
 ## Scripts
-* The script to run the test is put inside `package.json`:
+
+- The script to run the test is put inside `package.json`:
+
 ```json
   "scripts": {
     "test": "mocha -r ts-node/register tests/**/*.test.ts",
@@ -48,5 +60,6 @@
 ```
 
 ## Getting Started
+
 1. Run this command on terminal: `sh install.sh` in the root directory of project.
 2. Run test with `npm run test` or `npm t` in the root directory
