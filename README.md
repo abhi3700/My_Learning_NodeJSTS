@@ -40,8 +40,14 @@ To manage multiple versions of **Node.js**
 
 So, install using `npm`:
 
-```
+```console
 $ npm install -g yarn
+```
+
+OR
+
+```console
+$ curl --compressed -o- -L https://yarnpkg.com/install.sh | bash
 ```
 
 Thereafter for a project, `yarn` can be used to install, test, coverage, etc, instead of `npm`.
