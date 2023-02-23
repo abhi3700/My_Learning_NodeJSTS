@@ -20,10 +20,14 @@ Learn everything about React here.
 - Add prettier to your project using `$ npm install --save-dev prettier`.
   - single-quote: `true`
   - semi: `true` (depends on project to project)
+- VSCode Extensions:
+  - [React Component Preview](https://marketplace.visualstudio.com/items?itemName=SeoJunYoo.react-component-preview)
 
 ## My Apps
 
 Learn about each of my apps in the "**About**" section.
+
+> All the apps will be available in form of folders.
 
 1. [My App](./my-app/README.md)
 2. [Starting React](./starting-react/README.md)
@@ -105,6 +109,31 @@ A component can contain components & it goes recursively.
 ![](../../img/react_component.png)
 
 ![](../../img/react_component_recursive.png)
+
+---
+
+### JSX
+
+![](../../img/react_html.png)
+
+gets flipped to JS when curly braces is used:
+
+![](../../img/react_jsx_to_js.png)
+
+Key differences:
+
+- **JSX** uses `className` instead of `class`.
+- `onClick` instead of `onclick` listener like this:
+
+```jsx
+<button onClick={() => console.log("clicked")}>Click</button>
+```
+
+---
+
+Since, JSX isn't real JS, so a package `webpack` is used to convert JSX to JS.
+
+![](../../img/react_jsx_to_js_via_webpack.png)
 
 ---
 
@@ -199,6 +228,56 @@ function MyList() {
   );
 }
 ```
+
+### State
+
+State is a way to store data in a component. It is similar to props, but it is private and fully controlled by the component.
+
+```jsx
+const [showBook, setShowBook] = useState(false);
+```
+
+![](../../img/react_state.png)
+
+When application becomes very big, then the state management is done using either `Redux` or `ReactContext`.
+
+## Examples
+
+1. Use component props to pass data to a component.
+
+   ![](../../img/react_eg_1.png)
+
+2. next version of (1)
+
+   ![](../../img/react_eg_1_rev.png)
+
+   > `props` in arg is changed to {title}
+
+3. Use `map` to render the books in the same example. No need to write the `<Book/>` component again and again for a long list of books.
+
+   ![](../../img/react_eg_1_rev_2.png)
+
+4. Not necessarily the dictionary key in Book has to be `title`. So, instead changed the list's key to `name`:
+
+   ![](../../img/react_eg_1_rev_3.png)
+
+All these versions output the same result as:
+
+![](../../img/react_eg_1_output.png)
+
+---
+
+1. Use `useState` to change the state of the component. Here, show/hide the book based on clicked (via `setShowBook()` function) status maintained in `showBook` param.
+
+   ![](../../img/react_eg_2.png)
+
+2. Revised code for (1): the html logic are moved to 2 functions & then those functions are called. More professional expression.
+
+   ![](../../img/react_eg_2_rev.png)
+
+All these versions output the same result as:
+
+![](../../img/react_eg_2_output.png)
 
 ## Tools
 
