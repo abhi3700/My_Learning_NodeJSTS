@@ -1,215 +1,203 @@
 # Typescript
 
-My Learning on Typescript programming language
+My Learning on Typescript.
 
-## About
+## Concepts
 
 - [What is Typescript](https://www.youtube.com/watch?v=BwuLxPH8IDs&t=117s)
-  ![What is typescript](./img/what_is_ts.png)
+  ![What is typescript](../img/what_is_ts.png)
 
 - [Why Typescript](https://www.youtube.com/watch?v=BwuLxPH8IDs&t=295s)
-  ![Why typescript](./img/why_ts.png)
+  ![Why typescript](../img/why_ts.png)
 
 - Browsers can't execute TypeScript, but JavaScript, hence all the `.ts` code has to be compiled down to `.js`
 - TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
 - It offers classes, modules, and interfaces to help you build robust components.
+- For React, JS is used which is achieved by compiling typescript. Hence, a safer JS rather than hardcoding JS w/o static typing.
 - The compiler is `tsc`. This is used to transpile `.ts` file to `.js`
+- When defining a variable, prefer using `const` than `let` unless you want to change the value of the variable. This is because, `const` is immutable. Hence, it's better to use `const` than `let` for safety. The same pattern is also followed in 'Rust' programming language using `let` (immutable) & `let mut` (mutable).
 - Types
-  ![types](img/types.png)
-- In TypeScript, the code can be made to look like without defining specific type like JS by declaring variables as `any`.
+  ![types](../img/types.png)
+- In TypeScript, the code can be made to look like without defining specific type like JS by declaring variables as `any`. We can skip the type declaration in TS using a boilerplate with `tsconfig.json` file. That takes care of the type declaration. Follow this [ts-boilerplate repo](https://github.com/abhi3700/ts-boilerplate).
 - The idea is to throw unexpected error at compile-time not during run-time.
 - Prefer using `===` instead of `==` in typescript.
+
   - `===` checks the types of both sides first & then the value. In TS, `==` would also work in similar way.
   - `==` sometimes might give an unexpected result.
 
-So, it's better to use `===` than `==` in TS.
+  So, it's better to use `===` than `==` in TS.
 
-E.g.
+  E.g.
 
-```ts
-let str = "1";
-let num = 1;
+  ```ts
+  let str = "1";
+  let num = 1;
 
-console.log(str == num);
-```
+  console.log(str == num);
+  ```
 
-After compile,
+  After compile,
 
-```console
-comparisons.ts:4:13 - error TS2367: This condition will always return 'false' since the types 'string' and 'number' have no overlap.
+  ```console
+  comparisons.ts:4:13 - error TS2367: This condition will always return 'false' since the types 'string' and 'number' have no overlap.
 
-4 console.log(str == num);
-              ~~~~~~~~~~
+  4 console.log(str == num);
+                ~~~~~~~~~~
 
-Found 1 error.
-```
+  Found 1 error.
+  ```
 
-Hence, it's not wrong to use `==`. But, still for safety use `===` over `==`
-
----
-
-[String vs string](https://dev.to/josiasaurel/the-difference-between-string-and-string-in-typescript-4mf2)
-
-Prefer using `String` as a class like wrapping something as string:
-
-```ts
-BigNumber.from(String(1e10));
-```
-
-whereas `string` should be used for variables defined just as `string`.
+  Hence, it's not wrong to use `==`. But, still for safety use `===` over `==`
 
 ---
 
-[Types vs Interfaces](https://blog.logrocket.com/types-vs-interfaces-in-typescript/)
+- [String vs string](https://dev.to/josiasaurel/the-difference-between-string-and-string-in-typescript-4mf2)
 
-```ts
-type Man {
-  age: number
-}
+  Prefer using `String` as a class like wrapping something as string:
 
-type Woman {
-  age: number
-}
+  ```ts
+  BigNumber.from(String(1e10));
+  ```
 
-type Person: Man | Woman
-```
+  whereas `string` should be used for variables defined just as `string`.
 
-```ts
-interface Name {
-  name: string
-}
+---
 
-interface Age {
-  age: number
-}
+- [Types vs Interfaces](https://blog.logrocket.com/types-vs-interfaces-in-typescript/)
 
-interface Person: Name & Age
-```
+  <details>
 
-try to use `interface` generally.
+  <summary><b>Code:</b></summary>
+
+  ```ts
+  type Man {
+    age: number
+  }
+
+  type Woman {
+    age: number
+  }
+
+  type Person: Man | Woman
+  ```
+
+  ```ts
+  interface Name {
+    name: string
+  }
+
+  interface Age {
+    age: number
+  }
+
+  interface Person: Name & Age
+  ```
+
+  </details>
+
+  try to use `interface` generally.
 
 ## Installation
 
-### Ubuntu
-
-- M-1
-
-```console
-// globally
-$ npm install -g typescript
-
-// locally
-$ npm install --save-dev typescript
-```
-
-- M-2
-
-```console
-$ sudo apt get update
-
-$ sudo apt install node-typescript
-```
-
 ### MacOS
 
-#### Install
+**Install**:
 
-```console
-// globally
+```sh
+# globally
 $ npm install -g typescript
 
-// locally
+# locally into devDependencies
 $ npm install --save-dev typescript
+
+# locally into dependencies
+$ npm install --save typescript
 ```
 
-#### Update
+**Update**:
 
-```console
-$ npm update -g typscript
+```sh
+$ npm update -g typescript
 ```
 
-#### Uninstall
+**Uninstall**:
 
-```console
-// globally
-$ npm uninstall -g typescript
+```sh
+# globally
+npm uninstall -g typescript
 
-// locally
-$ npm uninstall --save-dev typescript
+# locally from devDependencies
+npm uninstall --save-dev typescript
+
+# locally from dependencies
+npm uninstall --save typescript
 ```
+
+### Package Manager
+
+**NPM vs Yarn**
+
+| Topic                                       | npm                              | yarn                         |
+| ------------------------------------------- | -------------------------------- | ---------------------------- |
+| Installation                                | serial i.e. slow                 | parallel i.e. fast           |
+| Show list of commands                       | npm                              | yarn                         |
+| Initialize a project                        | npm init                         | yarn init                    |
+| Install dependencies from `package.json`    | npm install                      | yarn                         |
+| Install a package and add to `package.json` | npm install <package> --save     | yarn add <package>           |
+| Install a devDependency                     | npm install <package> --save-dev | yarn add <package> --dev     |
+| Remove a dependency                         | npm uninstall <package> --save   | yarn remove <package>        |
+| Upgrade package to its latest version       | npm update --save                | yarn upgrade                 |
+| Install a package globally                  | npm install <package> -g         | yarn global add <package>    |
+| Uninstall a package globally                | npm uninstall <package> -g       | yarn global remove <package> |
+
+## TS Boilerplate
+
+[Binary repo](https://github.com/abhi3700/ts-boilerplate).
+
+[Lib repo](https://github.com/abhi3700/ts-boilerplate).
+
+## TS Playground
+
+[play here](./playground/)
 
 ## Getting Started
 
-### Windows
+> Instead try [boilerplate](#ts-boilerplate).
 
-#### Write code
+1. Write code
 
-```ts
-let h = "Hello World";
-console.log(h);
-```
+   ```ts
+   let h = "Hello World";
+   console.log(h);
+   ```
 
-#### Transpile code
+2. Transpile code
 
-```console
-$ ts hello.ts
-// generates a `hello.js` file
+   ```sh
+   # M-1
+   tsc hello.ts
+   # generates a `hello.js` file
 
-// M-2
-$ ts hello.ts --outFile hello
-// generates a `hello` file
-```
+   # M-2
+   tsc hello.ts --outFile hello
+   # generates a `hello` file
+   ```
 
-#### Print code
+3. Print code
 
-```console
-$ npm hello.js
+   ```sh
+   node hello.js
 
-// OR
+   // OR
 
-$ npm hello
-```
-
-### MacOS
-
-#### Write code
-
-```ts
-let h = "Hello World";
-console.log(h);
-```
-
-#### Transpile code
-
-```console
-$ tsc hello.ts
-// generates a `hello.js` file
-
-// M-2
-$ tsc hello.ts --outFile hello
-// generates a `hello` file
-```
-
-#### Print code
-
-```console
-$ node hello.js
-
-// OR
-
-$ node hello
-```
-
-## Learning
-
-- For React, JS is used which is achieved by compiling typescript. Hence, a safer JS rather than hardcoding JS w/o static typing.
-- [understanding typescript](./tuts/understanding-ts/README.md)
+   node hello
+   ```
 
 ## Cheatsheet
 
 ![](../img/ts_cheatsheet.png)
 
-## Troubleshooting
+## Troubleshoot
 
 ### Error: `error TS2304: Cannot find name 'unknown'.`
 
@@ -245,22 +233,6 @@ randomName.then(function (result) {
   console.log("Random name: " + result); // => Random name: lfb3a45e344e
 });
 ```
-
-## Package Manager
-
-**NPM vs Yarn**
-
-| Topic                                       | npm                              | yarn                         |
-| ------------------------------------------- | -------------------------------- | ---------------------------- |
-| Installation                                | serial i.e. slow                 | parallel i.e. fast           |
-| Show list of commands                       | npm                              | yarn                         |
-| Install dependencies from `package.json`    | npm install                      | yarn                         |
-| Install a package and add to `package.json` | npm install <package> --save     | yarn add <package>           |
-| Install a devDependency                     | npm install <package> --save-dev | yarn add <package> --dev     |
-| Remove a dependency                         | npm uninstall <package> --save   | yarn remove <package>        |
-| Upgrade package to its latest version       | npm update --save                | yarn upgrade                 |
-| Install a package globally                  | npm install <package> -g         | yarn global add <package>    |
-| Uninstall a package globally                | npm uninstall <package> -g       | yarn global remove <package> |
 
 ## Repositories
 
