@@ -11,6 +11,15 @@ Learn everything about React here.
   > Instead of manipulating the browser's DOM directly, React creates a virtual DOM in memory, where it does all the necessary manipulating, before making the changes in the browser DOM.
 - React only changes what needs to be changed!
   > React finds out what changes have been made, and changes only what needs to be changed.
+- **Real vs Virtual DOM**
+  - Frequent DOM manipulations are expensive and performance heavy.
+  - Virtual DOM is a virtual representation of the real DOM.
+  - When state changes occur, the virtual DOM is updated and the previous and current version of virtual DOM is compared. This is called “diffing”.
+  - The virtual DOM then sends a batch update to the real DOM to update the UI.
+  - React uses virtual DOM to enhance its performance.
+  - It uses the observable to detect state and prop changes.
+  - React uses an efficient diff algorithm to compare the versions of virtual DOM.
+  - It then makes sure that batched updates are sent to the real DOM for repainting or re-rendering of the UI.
 
 ## Installation
 
