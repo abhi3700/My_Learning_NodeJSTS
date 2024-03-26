@@ -41,13 +41,13 @@ To manage multiple versions of **Node.js**
 So, install using `npm`:
 
 ```console
-$ npm install -g yarn
+npm install -g yarn
 ```
 
 OR
 
 ```console
-$ curl --compressed -o- -L https://yarnpkg.com/install.sh | bash
+curl --compressed -o- -L https://yarnpkg.com/install.sh | bash
 ```
 
 Thereafter for a project, `yarn` can be used to install, test, coverage, etc, instead of `npm`.
@@ -70,6 +70,15 @@ To setup in Github Action for a repo, refer [this](https://github.com/abhi3700/m
   ```
 
   - M-2: Also this line can be added at the starting of the `.js` file. [Source](https://stackoverflow.com/a/35365041/6774636)
+
+## Repositories
+
+### My
+
+- TS boilerplate (bin): <https://github.com/abhi3700/ts-boilerplate-bin>
+- TS boilerplate (lib): <https://github.com/abhi3700/ts-boilerplate-lib>
+
+### Others
 
 ## Troubleshoot
 
