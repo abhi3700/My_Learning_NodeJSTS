@@ -36,18 +36,23 @@ To manage multiple versions of **Node.js**
 
 ### 3. Yarn
 
-`yarn` is relatively faster than `npm` because of **parallel** installation of dependency packages instead of **sequential**.
+> Although there are many other alternatives like `pnpm`, `bun`, etc.
+>
+> `yarn` is relatively faster than `npm` because of **parallel** installation of dependency packages instead of **sequential**.
+>
+> ~~DON'T USE `npm install -g yarn`~~
 
-So, install using `npm`:
+With [node.js](#2-nodejs-node--npm) installed, [`corepack`](https://yarnpkg.com/corepack) command is ready to use. Or else, install corepack via `$ npm install -g corepack`.
 
-```console
-npm install -g yarn
+```sh
+corepack enable
 ```
 
-OR
+Now, check:
 
-```console
-curl --compressed -o- -L https://yarnpkg.com/install.sh | bash
+```sh
+$ yarn --version
+4.1.1
 ```
 
 Thereafter for a project, `yarn` can be used to install, test, coverage, etc, instead of `npm`.
