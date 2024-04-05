@@ -117,7 +117,7 @@ $ npm install --save typescript
 **Update**:
 
 ```sh
-$ npm update -g typescript
+npm update -g typescript
 ```
 
 **Uninstall**:
@@ -199,7 +199,7 @@ npm uninstall --save typescript
 
 ## Troubleshoot
 
-### Error: `error TS2304: Cannot find name 'unknown'.`
+### 1. Error: `error TS2304: Cannot find name 'unknown'.`
 
 - Solution:
 
@@ -209,7 +209,7 @@ declare global {
 }
 ```
 
-### Error: `Not able to print Promise <pending> result`
+### 2. Error: `Not able to print Promise <pending> result`
 
 - Before:
 
@@ -234,9 +234,40 @@ randomName.then(function (result) {
 });
 ```
 
+### 3. Error: `Cannot find module '../../abi/WTsscLz.json'. Consider using '--resolveJsonModule' to import module with '.json' extension.`
+
+- Cause: In `tsconfig.json`, it's not enabled to resolve json modules. The error message you're encountering indicates that TypeScript is unable to locate and import the JSON file `../../abi/WTsscLz.json`. By default, TypeScript does not handle `.json` files as modules, which means you cannot import them directly without some additional configuration.
+
+- Solution: Here's what you should do:
+
+1. Locate your `tsconfig.json` file in the root of your TypeScript project.
+2. Add or modify the `compilerOptions` section to include `"resolveJsonModule": true`.
+
+Your `tsconfig.json` should look something like this:
+
+```json
+{
+  "compilerOptions": {
+    // ... other options ...
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node"
+    // ... other options ...
+  }
+  // ... potentially other sections ...
+}
+```
+
+And the changes in typescript file:
+
+```diff
+-import {} from '../../abi/WTsscLz.json';
++import WTsscLz from '../../abi/WTsscLz.json';
+```
+
 ## Repositories
 
-- TS Unit Tests Setup - https://github.com/ChiragRupani/TSUnitTestsSetup
+- TS Unit Tests Setup - <https://github.com/ChiragRupani/TSUnitTestsSetup>
 
 ### References
 
