@@ -95,3 +95,4 @@ To setup in Github Action for a repo, refer [this](https://github.com/abhi3700/m
 ## References
 
 - [Node.js Tutorial for Beginners: Learn Node in 1 Hour](https://youtu.be/TlB_eWDSMt4)
+- [Web Developer Roadmap (2024) - Everything is Changing](https://www.youtube.com/watch?v=EzTxYQmU8OE) ✅

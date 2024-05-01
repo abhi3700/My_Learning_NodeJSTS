@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 5, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/app/layout.js"],"sourcesContent":["export default function RootLayout({ children }) {\n    return (\n        <html lang=\"en\">\n            <head />\n            <body>{children}</body>\n        </html>\n    );\n}\n"],"names":[],"mappings":";;;;;;AAAe,SAAS,WAAW,EAAE,QAAQ,EAAE;IAC3C,qBACI,wPAAC;QAAK,MAAK;;0BACP,wPAAC;;;;;0BACD,wPAAC;0BAAM;;;;;;;;;;;;AAGnB"}},
+    {"offset": {"line": 34, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 46, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/app/header.js"],"sourcesContent":["export function Header({ children }) {\n    return <header>{children}</header>;\n}\n"],"names":[],"mappings":";;;;;;AAAO,SAAS,OAAO,EAAE,QAAQ,EAAE;IAC/B,qBAAO,wPAAC;kBAAQ;;;;;;AACpB"}},
+    {"offset": {"line": 61, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 66, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/app/page.js"],"sourcesContent":["import { Header } from \"./header\";\nimport { Tweet } from \"react-tweet\";\n\nexport default function Page() {\n    return (\n        <section>\n            <Header>\n                <h1>Lee!</h1>\n            </Header>\n            <p>This is amazing site! 🎉</p>\n            <Tweet id=\"1785470824826159489\"></Tweet>\n        </section>\n    );\n}\n"],"names":[],"mappings":";;;;;;;;;;AAGe,SAAS;IACpB,qBACI,wPAAC;;0BACG,wPAAC,6GAAA,CAAA,SAAM;0BACH,cAAA,wPAAC;8BAAG;;;;;;;;;;;0BAER,wPAAC;0BAAE;;;;;;0BACH,wPAAC,+IAAA,CAAA,QAAK;gBAAC,IAAG;;;;;;;;;;;;AAGtB"}},
+    {"offset": {"line": 113, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 124, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/.next-internal/server/app/page/actions.js"],"sourcesContent":["__turbopack_export_value__({\n});"],"names":[],"mappings":"AAAA,2BAA2B,CAC3B"}},
+    {"offset": {"line": 125, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

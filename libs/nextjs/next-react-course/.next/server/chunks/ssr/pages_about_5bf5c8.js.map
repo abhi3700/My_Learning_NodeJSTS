@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 5, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/pages/about.js"],"sourcesContent":["export default function Page() {\n    return <h1>About Page</h1>;\n}\n"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACpB,qBAAO,iFAAC;kBAAG;;;;;;AACf"}},
+    {"offset": {"line": 20, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

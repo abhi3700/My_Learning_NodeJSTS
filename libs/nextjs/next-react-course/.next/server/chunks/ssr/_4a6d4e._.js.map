@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 5, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/app/layout.js"],"sourcesContent":["export default function RootLayout({ children }) {\n    return (\n        <html lang=\"en\">\n            <head />\n            <body>{children}</body>\n        </html>\n    );\n}\n"],"names":[],"mappings":";;;;;;AAAe,SAAS,WAAW,EAAE,QAAQ,EAAE;IAC3C,qBACI,wPAAC;QAAK,MAAK;;0BACP,wPAAC;;;;;0BACD,wPAAC;0BAAM;;;;;;;;;;;;AAGnB"}},
+    {"offset": {"line": 34, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 46, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/app/page.js"],"sourcesContent":["import { Header } from \"./header\";\nexport default function Page() {\n    return (\n        <section>\n            <Header>\n                <h1>Lee!</h1>\n            </Header>\n            <p>This is amazing site! 🎉</p>\n        </section>\n    );\n}\n"],"names":[],"mappings":";;;;;;;;AACe,SAAS;IACpB,qBACI,wPAAC;;0BACG,wPAAC,6GAAA,CAAA,SAAM;0BACH,cAAA,wPAAC;8BAAG;;;;;;;;;;;0BAER,wPAAC;0BAAE;;;;;;;;;;;;AAGf"}},
+    {"offset": {"line": 84, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 95, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/.next-internal/server/app/page/actions.js"],"sourcesContent":["__turbopack_export_value__({\n});"],"names":[],"mappings":"AAAA,2BAA2B,CAC3B"}},
+    {"offset": {"line": 96, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

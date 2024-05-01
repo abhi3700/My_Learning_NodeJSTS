@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 5, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/app/layout.js"],"sourcesContent":["export default function RootLayout({ children }) {\n    return (\n        <html lang=\"en\">\n            <head />\n            <body>{children}</body>\n        </html>\n    );\n}\n"],"names":[],"mappings":";;;;;;AAAe,SAAS,WAAW,EAAE,QAAQ,EAAE;IAC3C,qBACI,wPAAC;QAAK,MAAK;;0BACP,wPAAC;;;;;0BACD,wPAAC;0BAAM;;;;;;;;;;;;AAGnB"}},
+    {"offset": {"line": 34, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 45, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/.next-internal/server/app/_not-found/page/actions.js"],"sourcesContent":["__turbopack_export_value__({\n});"],"names":[],"mappings":"AAAA,2BAA2B,CAC3B"}},
+    {"offset": {"line": 46, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
