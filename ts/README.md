@@ -1,4 +1,4 @@
-# Typescript
+# Lean Typescript
 
 My Learning on Typescript.
 

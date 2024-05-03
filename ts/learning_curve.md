@@ -1,4 +1,4 @@
-# Learning Curve
+# Learning Curve for TS
 
 This file is all about "How to get started & become a pro in Typescript".
 

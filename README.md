@@ -1,6 +1,8 @@
-# My_Learning_Javascript
+# My_Learning_NodeJS
 
-Learn everything about Javascript
+![](img/js_runtime.png)
+
+Learn everything about Javascript/Typescript here.
 
 ## About
 
@@ -96,3 +98,5 @@ To setup in Github Action for a repo, refer [this](https://github.com/abhi3700/m
 
 - [Node.js Tutorial for Beginners: Learn Node in 1 Hour](https://youtu.be/TlB_eWDSMt4)
 - [Web Developer Roadmap (2024) - Everything is Changing](https://www.youtube.com/watch?v=EzTxYQmU8OE) ✅
+- [JavaScript Visualized: Event Loop, Web APIs, (Micro)task Queue](https://www.lydiahallie.com/blog/event-loop) 🌟🌟🌟🌟🌟
+  > It has many GIFs and animations to help you understand the Event Loop & more.
