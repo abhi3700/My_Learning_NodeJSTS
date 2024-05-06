@@ -5,7 +5,7 @@ Learn everything about React here.
 ## Overview
 
 - Default library/framework for building web applications.
-  > Best use case: <kbd>React FE + NextJS BE</kbd>
+  > Best use case: <kbd>React + NextJS FE</kbd>. We could also use backend API using NextJS, but we can have powerful BE APIs in Rust using Axum may be.
 - React components are JavaScript functions that return markup.
 - React creates a VIRTUAL DOM in memory.
   > Instead of manipulating the browser's DOM directly, React creates a virtual DOM in memory, where it does all the necessary manipulating, before making the changes in the browser DOM.
@@ -23,10 +23,14 @@ Learn everything about React here.
 
 ## Installation
 
-- `nvm`, `npm`, `node`, `yarn` (in sequence)
-- Add a React project using `$ npx create-react-app my-app` (where `my-app` is the name of your project).
-  > Don't install `create-react-app` globally.
-- Add prettier to your project using `$ npm install --save-dev prettier`.
+- `nvm`, `npm`, `node`(in sequence)
+  > Instead of `npm`, one can use `yarn`, `pnpm`, `bun` (my fav. ❤️), etc.
+- Create react project: There are many types to kickstart this:
+  - **React App**: Add a React project using `$ npx create-react-app my-app` (where `my-app` is the name of your project).
+    > 💡 Don't install `create-react-app` globally.
+  - **Using Vite** (fast enough): Look at this project done: [todo-vite-ts](./todo-vite-ts/)
+  - **Using NextJS** (production + fast): Look at part-1 & part-2 in [next-react-course](../nextjs/next-react-course/), [next-react-course-2](../nextjs/next-react-course-2/)
+- Add prettier to your project using `$ bun add --dev prettier`.
   - single-quote: `true`
   - semi: `true` (depends on project to project)
 - VSCode Extensions:
@@ -41,10 +45,10 @@ Learn about each of my apps in the "**About**" section.
 1. [My App](./my-app/README.md)
 2. [Starting React](./starting-react/README.md)
 
-## Getting Started
+## Run/Deploy
 
-- Run `$ npm start` to start the development server.
-- Run `$ npm run build` to create a production build.
+- Run `$ bun start` to start the development server.
+- Run `$ bun run build` to create a production build.
 - Deploy the build folder to a static hosting service like **Netlify** or **Vercel**.
 
 ## Concepts
@@ -113,6 +117,49 @@ ReactDOM.render(App, document.getElementById("root"));
 
 Component are the building blocks of React apps. They have JSX (JS XML) markup and JavaScript logic.
 
+A component follows this order:
+<details><summary><b>Expand:</b></summary>
+
+```tsx
+/* Props type check */
+interface TodoItemProps {
+  id: string
+  title: string
+  isCompleted: boolean
+  deleteTodo: (id: string) => void
+  toggleTodo: (id: string, isCompleted: boolean) => void
+}
+
+
+export default function TodoItem({
+  id,
+  title,
+  isCompleted,
+  deleteTodo,
+  toggleTodo,
+}: TodoItemProps) {
+  /* react state */
+  const [newTitle, setNewTitle] = useState('')
+
+  /* react hooks using `useEffects` */
+  useEffect(() => {
+  })
+
+  /* functions */
+  const handleDelete = () => {
+  }
+
+  /* return */
+  return (
+    <>
+    // put the JSX here
+    </>
+  )
+}
+```
+
+</details>
+
 A component can contain components & it goes recursively.
 
 ![](../../img/react_component.png)
@@ -132,6 +179,8 @@ gets flipped to JS when curly braces is used:
 Key differences:
 
 - **JSX** uses `className` instead of `class`.
+- **JSX** uses `htmlFor` instead of `for`. E.g. In a form, connecting element to a label using `htmlFor`.
+- Always put the JS/TS code inside `{}` (curly braces) in between the elements.
 - `onClick` instead of `onclick` listener like this:
 
 ```jsx
@@ -301,8 +350,14 @@ All these versions output the same result as:
 - [React](https://facebook.github.io/react/)
 - [Learn React](https://beta.reactjs.org/learn)
 - [React + TS](https://youtube.com/playlist?list=PLNqp92_EXZBJ4CBroxVBJEpAXoz1g-naZ)
+- [react-tutorial.app](https://react-tutorial.app/) [PURCHASED]
 
-### Libraries
+## Videos
 
-- [Awesome React Components](https://github.com/brillout/awesome-react-components)
+- [Learn React With This One Project](https://www.youtube.com/watch?v=Rh3tobg7hEo) ✅
+
+### Component Libraries
+
+- [Github | `awesome-react-components`](https://github.com/brillout/awesome-react-components)
 - [CogoToast](https://cogoport.github.io/cogo-toast/)
+- [Chakra UI](https://v2.chakra-ui.com/)
