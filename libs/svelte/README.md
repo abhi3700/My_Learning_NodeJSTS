@@ -17,3 +17,4 @@
 
 - [Svelte Crash Course | Traversy Media](https://www.youtube.com/watch?v=3TVy6GdtNuQ)
 - [SvelteKit Crash Course: Build a Full Website in 90 min! - 2023 Tutorial](https://www.youtube.com/watch?v=QKxJW6VVp6w)
+- [React VS Svelte...10 Examples](https://www.youtube.com/watch?v=MnpuK0MK4yo) ✅

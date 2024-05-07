@@ -165,6 +165,79 @@ Here, by visiting links:
 - <http://localhost:3000/about>, we get About page.
 - <http://localhost:3000/profile>, we get Profile page.
 
+Suppose, a page when rendered needs to automatically switch to a different layout/page. In this case, use `useRouter()` from `next/navigation` like this:
+
+```tsx
+import { useRouter } from 'next/navigation'
+
+//...
+router.push('/deposit')
+//...
+```
+
+<details><summary><b>Full Code:</b></summary>
+
+```tsx
+function MetamaskButton() {
+  const account = useAccount()
+  const { connect, connectors, status, error } = useConnect()
+  const router = useRouter()
+
+  // Redirect if already connected
+  useEffect(() => {
+    if (account.isConnected) {
+      router.push('/deposit')
+  }, [account.isConnected, router])
+
+  const handleOnClick = async () => {
+    if (typeof window.ethereum !== 'undefined') {
+      const metaMaskConnector = connectors.find(
+        connector => connector.name === 'MetaMask',
+      )
+
+      if (metaMaskConnector) {
+        connect({ connector: metaMaskConnector })
+        if (account.status === 'connected') {
+          console.log(
+            `${JSON.stringify(account.addresses[0])} connected to ${account.chainId}`,
+          )
+        }
+      }
+    } else {
+      window.open('https://metamask.io/', '_blank')
+    }
+  }
+
+  return (
+    <Button
+      color="orange"
+      _hover={{ bg: 'orange.600' }} // Darker on hover for better interaction feedback
+      px={12}
+      py={8}
+      fontSize="1em"
+      bgColor="white"
+      borderRadius="1em"
+      boxShadow="0 4px 12px rgba(0,0,0,0.25)"
+      leftIcon={<MetamaskIcon width="1em" height="1em" />}
+      onClick={handleOnClick}>
+      <b>Connect with METAMASK</b>
+    </Button>
+  )
+}
+
+export default function App() {
+  return (
+    <Flex direction="column" align="center" justify="center" height="100vh">
+      <MetamaskButton />
+    </Flex>
+  )
+}
+```
+
+> Here, the current page is automatically rendered to the desired page (`/deposit`).
+
+</details>
+
 ### Nested routes
 
 Nested routing
@@ -373,7 +446,27 @@ Here, if we want to
 7. loading after deleting the test comment
    ![](../../img/nextjs_api_19.png)
 
+## Troubleshoot
+
+### 1. NextRouter was not mounted Next.JS
+
+- _Cause_: Use of `next/router` instead of `next/navigation` as per NextJS v14.
+- _Solution_: Use `next/navigation` instead of `next/router`.
+
+Before:
+
+```tsx
+import { useRouter } from 'next/router'
+```
+
+After:
+
+```tsx
+import { useRouter } from 'next/navigation'
+```
+
 ## References
 
 - [Next.js Tutorial for Beginners](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgC9mj0qv972IO5DmD-H0ZH)
 - [Next.js 14 Tutorial](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjOKd6gdf4QtV1uYNiQnruI)
+- [Introduction to Next.js and React](https://www.youtube.com/watch?v=h2BcitZPMn4)

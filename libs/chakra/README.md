@@ -9,3 +9,4 @@
 ## References
 
 - [Chakra UI](https://v2.chakra-ui.com/)
+- [Chakra UI for beginners](https://www.youtube.com/playlist?list=PLx2Y9Sna27Xt3deeeOLqW59-mdWpUWQ0T) 🧑🏻‍💻
