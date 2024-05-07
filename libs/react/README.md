@@ -355,6 +355,7 @@ All these versions output the same result as:
 ## Videos
 
 - [Learn React With This One Project](https://www.youtube.com/watch?v=Rh3tobg7hEo) ✅
+- [React Crash Course 2024](https://youtu.be/LDB4uaJ87e0?si=zIBjeaAksOnYiM83) `3-hr` ⏰
 
 ### Component Libraries
 

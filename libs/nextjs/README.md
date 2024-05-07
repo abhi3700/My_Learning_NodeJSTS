@@ -4,6 +4,8 @@ The React Framework for Production.
 
 ## Overview
 
+Watch this [video](https://youtu.be/wm5gMKuwSYk?si=O8PtqA_-lxbNaxz1&t=213) 📹 to understand its benefits.
+
 - It simplifies the process of building a react application for production. Basically, it is a full-stack development framework that allows you to build server-side rendered (SSR) React applications with ease.
 - What does SSR or serverless architecture mean?
   - SSR means that the HTML of your application is generated on the server instead of the client. This is useful for SEO purposes and also for performance reasons.
@@ -467,6 +469,7 @@ import { useRouter } from 'next/navigation'
 
 ## References
 
-- [Next.js Tutorial for Beginners](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgC9mj0qv972IO5DmD-H0ZH)
-- [Next.js 14 Tutorial](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjOKd6gdf4QtV1uYNiQnruI)
+- [Next.js 14 Full Course 2024 | Build and Deploy a Full Stack App Using the Official React Framework](https://www.youtube.com/watch?v=wm5gMKuwSYk) 🧑🏻‍💻
+- [Next.js Tutorial for Beginners YT playlist](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgC9mj0qv972IO5DmD-H0ZH)
+- [Next.js 14 Tutorial YT playlist](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjOKd6gdf4QtV1uYNiQnruI)
 - [Introduction to Next.js and React](https://www.youtube.com/watch?v=h2BcitZPMn4)
