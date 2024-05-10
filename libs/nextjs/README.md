@@ -469,7 +469,8 @@ import { useRouter } from 'next/navigation'
 
 ## References
 
-- [Next.js 14 Full Course 2024 | Build and Deploy a Full Stack App Using the Official React Framework](https://www.youtube.com/watch?v=wm5gMKuwSYk) 🧑🏻‍💻
+- [Next.js 14 Full Course 2024 | Build and Deploy a Full Stack App Using the Official React Framework by **JavaScript Mastery**](https://www.youtube.com/watch?v=wm5gMKuwSYk) 🧑🏻‍💻
+- [Build and Deploy a Banking App with Finance Management Dashboard Using Next.js 14 & TypeScript  by **JavaScript Mastery**](https://youtu.be/PuOVqP_cjkE?si=6ZFotjhWkyF7nEe1)
 - [Next.js Tutorial for Beginners YT playlist](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgC9mj0qv972IO5DmD-H0ZH)
 - [Next.js 14 Tutorial YT playlist](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjOKd6gdf4QtV1uYNiQnruI)
 - [Introduction to Next.js and React](https://www.youtube.com/watch?v=h2BcitZPMn4)
