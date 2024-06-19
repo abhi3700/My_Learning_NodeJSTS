@@ -57,6 +57,12 @@ $ yarn --version
 4.1.1
 ```
 
+To create a new project:
+
+```sh
+yarn init -n PROJECT_NAME
+```
+
 Thereafter for a project, `yarn` can be used to install, test, coverage, etc, instead of `npm`.
 
 [Docs](https://yarnpkg.com/)
