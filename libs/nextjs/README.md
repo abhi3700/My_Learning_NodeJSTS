@@ -448,6 +448,15 @@ Here, if we want to
 7. loading after deleting the test comment
    ![](../../img/nextjs_api_19.png)
 
+## Deployment
+
+**Deploy to Vercel**:
+
+1. `npm install -g vercel` to install vercel globally.
+2. `vercel` to login to vercel. Asks for login.
+3. `vercel` to inspect & preview the project before deployment.
+4. `vercel --prod` to deploy the project.
+
 ## Troubleshoot
 
 ### 1. NextRouter was not mounted Next.JS
