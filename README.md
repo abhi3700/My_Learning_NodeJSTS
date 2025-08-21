@@ -100,6 +100,66 @@ To setup in Github Action for a repo, refer [this](https://github.com/abhi3700/m
 - _Cause_: `yarn.lock` file conflicts are not resolved during PR.
 - _Solution_: Just copy paste the `yarn.lock` file from the `main` branch & then run `$ yarn install` & then push commit. Your lock file is synced now.
 
+### 2. `yarn --version` returns node:internal/modules/cjs/loader:1408
+
+Error details:
+```sh
+yarn --version 
+node:internal/modules/cjs/loader:1408
+  throw err;
+  ^
+
+Error: Cannot find module '/Users/abhi3700/.yarn/releases/yarn-1.22.19.cjs'
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1405:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1061:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1066:22)
+    at Function._load (node:internal/modules/cjs/loader:1215:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:151:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v23.11.0
+```
+
+- *Solution*: Need to remove the yarn related folders.
+
+```sh
+rm -rf ~/.yarn ~/.yarnrc.yml ~/.yarnrc
+rm -rf .yarn .yarnrc.yml .yarnrc
+
+# if don't want to install v4
+corepack disable
+
+# 🧹 Clean npm global Yarn install
+npm uninstall -g yarn
+
+# Clear npm prefix cache:
+hash -r
+```
+
+And then install
+```sh
+npm install -g yarn@1.22.19
+```
+
+```sh
+which yarn     # Should point to /opt/homebrew/bin/yarn or ~/.nvm/.../bin/yarn
+yarn --version # Should say 1.22.19
+```
+
+Optional:
+
+Set yarn version for personal project:
+```sh
+yarn set version 1.22.19
+
+# This will create .yarnrc or .yarnrc.yml with the appropriate version.
+```
+
 ## References
 
 - [Node.js Tutorial for Beginners: Learn Node in 1 Hour](https://youtu.be/TlB_eWDSMt4)
